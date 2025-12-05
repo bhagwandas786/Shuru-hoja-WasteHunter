@@ -1,0 +1,31 @@
+# Binaries
+shuru-hoja
+dist/
+build/
+*.exe
+*.out
+
+# Dependencies
+vendor/
+go.sum
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Coverage
+coverage.txt
+coverage.out
+
+# Test
+profile.out
