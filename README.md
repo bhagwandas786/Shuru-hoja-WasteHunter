@@ -1,37 +1,25 @@
-# SHURU HOJA - Production-Safe Filesystem Analyzer
+# **🚀SHURU HOJA - Production-Safe Filesystem Analyzer🚀**
 
-**Version:** 1.0.0  
-**Developed by:** Bunny 🐯  
+**Version:** 1.0.0
+**Developed by:** Bunny 🐯
 **Tagline:** Start Now, Analyze Safely!
+**Repository:** https://github.com/bhagwandas786/Shuru-hoja-WasteHunter
 
 ---
 
-## *🚀 Overview*
+## **🚀 Overview**
 
-**SHURU HOJA** is an enterprise-grade, production-safe filesystem analysis tool designed for system administrators and DevOps engineers. It performs comprehensive filesystem analysis in **100% read-only mode** - meaning it **never modifies or deletes any files**. 
+**SHURU HOJA** is an enterprise-grade, production-safe filesystem analysis tool designed for system administrators and DevOps engineers. It performs comprehensive filesystem analysis in **100% read-only mode** - meaning it **never modifies or deletes any files**.
 
 Perfect for production servers where safety is paramount, this tool helps identify space-consuming files and provides actionable recommendations for cleanup.
 
 ---
 
-## *Project Structure*
+## **Project Structure**
 
-shuru-hoja/
-├── shuru-hoja*              # Main executable
-├── cmd/shuru-hoja/main.go   # Entry point
-├── internal/                # Core logic
-│   ├── analyzer/           # Analysis engine
-│   ├── scanner/            # Filesystem scanner
-│   ├── ui/                 # User interface
-│   ├── config/             # Configuration
-│   └── safety/             # Safety features
-├── pkg/types/              # Data types
-├── scripts/                # Installation scripts
-├── etc/                    # Configuration files
-├── go.mod                  # Go module
-└── README.md               # This file
+<img width="1567" height="380" alt="image" src="https://github.com/user-attachments/assets/906bc4cc-5f30-4133-ae02-d4d7c2a1813b" />
 
-## *✨ Features*
+## **✨ Features**
 
 ### 🔒 **Safety First**
 - **100% Read-Only Operations** - No files are ever modified or deleted
@@ -66,8 +54,31 @@ shuru-hoja/
 - **Cross-Platform** - Works on Linux/Unix systems
 
 ---
-## **Basic Commands**
 
+## 📦 Installation
+
+### Quick Install & Setup (Prerequisites Installation)
+
+```bash
+# Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install Go compiler and Git
+sudo apt install -y golang-go git
+
+# Verify installations
+go version && git --version
+```
+## **Clone Repository**
+```bash
+# Clone the repository
+git clone https://github.com/bhagwandas786/Shuru-hoja-WasteHunter.git
+
+# Navigate to project directory
+cd Shuru-hoja-WasteHunter
+```
+## **Basic Commands**
+```bash
 # Show version
 shuru-hoja --version
 
@@ -82,36 +93,23 @@ shuru-hoja --quick
 
 # Show help
 shuru-hoja --help
+```
+## **Scan Specific Locations**
+```bash
+# Scan home directory
+shuru-hoja --path /home
 
+# Scan log files
+sudo shuru-hoja --path /var/log
+
+# Scan temporary files
+shuru-hoja --path /tmp
+```
 ## **Example Output**
-┌─────────────────────────────────────────────┐
-│        SHURU HOJA - Filesystem Analyzer     │
-│    Production-Safe • Read-Only • Enterprise │
-└─────────────────────────────────────────────┘
 
-════════════════════════════════════════════════
-               SCAN SUMMARY
-════════════════════════════════════════════════
-Total Scanned:           245.67 GB
-Total Files:             1,234,567
-Total Directories:       89,123
-Potential Cleanup:       45.23 GB
-Critical Risk Items:     12
-Caution Risk Items:      89
-Scan Duration:           42.3 seconds
+<img width="1288" height="476" alt="image" src="https://github.com/user-attachments/assets/6d28fcb7-edcb-4c88-bc22-aa07ad5c3ca4" />
 
-════════════════════════════════════════════════
-          TOP CLEANUP RECOMMENDATIONS
-════════════════════════════════════════════════
-┌──────────┬───────────┬──────────┬──────────────┬────────────────────────────┐
-│ Size     │ Type      │ Risk     │ Recommendation│ Path                      │
-├──────────┼───────────┼──────────┼──────────────┼────────────────────────────┤
-│ 12.4 GB  │ cache     │ Critical │ Delete       │ /var/cache/apt/archives   │
-│ 8.2 GB   │ log       │ Caution  │ Review       │ /var/log/journal/*.journal│
-│ 5.1 GB   │ duplicate │ Critical │ Delete       │ /home/user/backup.tar.gz  │
-│ 4.7 GB   │ temp      │ Caution  │ Review       │ /tmp/large_temp_file      │
-│ 3.2 GB   │ node_modules │ Critical │ Delete    │ /app/node_modules         │
-└──────────┴───────────┴──────────┴──────────────┴────────────────────────────┘
+<img width="1060" height="240" alt="image" src="https://github.com/user-attachments/assets/875adf00-449b-4aee-8fe9-ce8331af88d1" />
 
 ## **Risk Levels:**
 
@@ -121,13 +119,5 @@ Scan Duration:           42.3 seconds
 
 🔴 Critical: Large duplicates, massive caches, immediate action needed
 
-## 📦 Installation
-
-### Quick Install (Linux)
-```
-sudo ./scripts/install.sh
-```
-# Download the binary (if available)
-# Or build from source as shown below
 ## *📄 License*
 This tool is developed by Bunny for production use. Modify and distribute as needed.
