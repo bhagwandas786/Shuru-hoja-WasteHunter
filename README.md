@@ -1,8 +1,11 @@
 # **🚀SHURU HOJA - Production-Safe Filesystem Analyzer🚀**
 
 **Version:** 1.0.0
+
 **Developed by:** Bunny 🐯
+
 **Tagline:** Start Now, Analyze Safely!
+
 **Repository:** https://github.com/bhagwandas786/Shuru-hoja-WasteHunter
 
 ---
