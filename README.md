@@ -81,10 +81,24 @@ git clone https://github.com/bhagwandas786/Shuru-hoja-WasteHunter.git
 # Navigate to project directory
 cd Shuru-hoja-WasteHunter
 ```
+## **Build Instructions**
+```bash
+# After cloning, build the binary
+go build -o shuru-hoja ./cmd/shuru-hoja/main.go
+
+# Or build from directory
+go build -o shuru-hoja ./cmd/shuru-hoja
+
+# Install system-wide
+sudo cp shuru-hoja /usr/local/bin/
+```
 ## **Basic Commands**
 ```bash
 # Show version
 shuru-hoja --version
+
+# Check if installed
+which shuru-hoja
 
 # Start full system analysis
 sudo shuru-hoja
@@ -92,8 +106,8 @@ sudo shuru-hoja
 # Scan specific directory
 shuru-hoja --path /home/user
 
-# Quick scan mode
-shuru-hoja --quick
+# Quick test scan
+shuru-hoja --path /tmp --quick
 
 # Show help
 shuru-hoja --help
