@@ -20,7 +20,8 @@ Perfect for production servers where safety is paramount, this tool helps identi
 
 ## **Project Structure**
 
-<img width="1567" height="380" alt="image" src="https://github.com/user-attachments/assets/906bc4cc-5f30-4133-ae02-d4d7c2a1813b" />
+<img width="1528" height="700" alt="image" src="https://github.com/user-attachments/assets/768a16c6-5e3f-40a3-8f78-753488b7c121" />
+
 
 ## **✨ Features**
 
