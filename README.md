@@ -1,4 +1,4 @@
-# **🚀SHURU HOJA - Production-Safe Filesystem Analyzer🚀**
+#**🚀SHURU HOJA - Production-Safe Filesystem Analyzer🚀**
 
 **Version:** 1.0.0
 
